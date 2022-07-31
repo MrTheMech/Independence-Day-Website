@@ -1,0 +1,215 @@
+
+* {padding: 0; margin: 0;}
+
+body{
+    font-family: 'Salsa'; font-size: 22px;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 6em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  align-items: center;
+      background: rgb(255, 255, 255);
+
+}
+
+nav.sticky {
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    transition: padding 1s;
+}
+
+.logo {
+  margin: 0 0 0 .45em;
+}
+    .logo a {
+      color: rgb(28, 24, 22);
+    }
+
+    .logo, #navigation {
+        list-style: none;
+    }
+
+    .logo a, #navigation a {
+        text-decoration: none;
+        letter-spacing: .45rem;
+    }
+
+#navigation  {
+  display: flex;
+}
+
+#navigation a {
+  display: block;
+  padding: 1em;
+  color: rgb(0, 0, 0);
+}
+
+
+
+#navigation .Home a{
+    color: #F6921E;
+}
+
+#navigation .Path a{
+    color: #66699F;
+
+}
+
+#navigation .Speech a{
+    color: #00A04E;
+}
+
+#navigation .Home a:hover {
+    background: #00A04E;
+}
+
+#navigation .Path a:hover {
+    background: #dbdbdb;
+}
+
+#navigation .Speech a:hover {
+    background: #F6921E;
+}
+
+.hero {
+    width: 100%;
+    padding-bottom: 45%;
+    background: url("assets\\unknown12222-1-transformed.png") no-repeat center / cover ; color: azure;
+}
+
+/* *********** media queries *********** */
+
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    color: #F6921E;
+}
+h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 1em;
+    color: #00A04E;
+}
+
+#historypara, #exploitpara, #whatispara, #howispara {
+    display: block;
+    justify-content: center;
+    padding-inline: 8em;
+}
+
+#pmspeech {
+    text-align: center;
+}
+
+.videoplayer {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#footer {
+  background-color: #F6921E;
+  height: 5.5em;
+}
+
+#footerid {
+
+padding: 1em;
+  text-align: center;
+}
+
+@media all and (max-width: 990px) {
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        color: #F6921E;
+    }
+
+    #historypara, #exploitpara, #whatispara, #howispara {
+        display: block;
+        justify-content: center;
+        padding-inline: 2em;
+    }
+
+  .flex-container {
+    flex-direction: column;
+  }
+  
+  .logo {
+  margin: 0;
+  }
+  
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    align-items: center;
+        background: rgb(255, 255, 255);
+  
+  }
+
+  #navigation  {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
+
+
+/* ****** ****** */
+@media all and (max-width: 600px) {
+ 
+  .logo {
+    margin: .25em 0;
+    align-self: left; /* align the logo to the left side of 'flex-container' */
+}
+  
+  #navigation {
+    flex-direction: column;
+  }
+  
+  #navigation a { 
+    text-align: center; 
+    padding: 10px; 
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  }
+  
+  #navigation li:last-of-type a {
+    border-bottom: none;
+  }
+
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    align-items: center;
+        background: rgb(255, 255, 255); 
+  
+  }
+}
+
